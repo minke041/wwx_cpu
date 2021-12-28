@@ -20,7 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module defines(
-
-    );
-endmodule
+`define rst_enable 1'b1
+`define rst_disable 1'b0
+`define fetch_enable 1'b1
+`define fetch_disable 1'b0
+`define inst_addr 31:0
