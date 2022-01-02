@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../main_cpu_5.srcs/sources_1/new/P_Q.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/get_pre.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/get_sum.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/pre_adder_4.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

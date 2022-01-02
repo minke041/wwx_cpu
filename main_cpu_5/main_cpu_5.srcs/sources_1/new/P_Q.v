@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2021/12/26 15:12:13
+// Create Date: 2022/01/01 19:50:23
 // Design Name: 
-// Module Name: defines
+// Module Name: P_Q
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,10 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-`define rst_enable 1'b1
-`define rst_disable 1'b0
-`define fetch_enable 1'b1
-`define fetch_disable 1'b0
-`define inst_addr 31:0
-`define inst_bus 31:0
-`define zero_32 32'b0
+module P_Q(
+    a,b,P,Q
+    );
+    input wire[3:0] a;
+    input wire[3:0] b;
+    output wire[3:0] P;
+    output wire[3:0] Q;
+
+    assign P[3:0]=a[3:0]^b[3:0];
+    assign Q[3:0]=a[3:0]&b[3:0]; 
+endmodule

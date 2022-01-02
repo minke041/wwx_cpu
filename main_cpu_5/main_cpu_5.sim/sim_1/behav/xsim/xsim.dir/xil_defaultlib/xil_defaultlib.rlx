@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sim_1/new/tb_pre_adder_4.v,1641121979,verilog,,,,tb_pre_adder_4,,,,,,,,
+C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sources_1/new/P_Q.v,1641037969,verilog,,C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sources_1/new/get_pre.v,,P_Q,,,,,,,,
+C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sources_1/new/get_pre.v,1641039107,verilog,,C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sources_1/new/get_sum.v,,get_pre,,,,,,,,
+C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sources_1/new/get_sum.v,1641039312,verilog,,C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sources_1/new/pre_adder_4.v,,get_sum,,,,,,,,
+C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sources_1/new/pre_adder_4.v,1641039678,verilog,,C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sim_1/new/tb_pre_adder_4.v,,pre_adder_4,,,,,,,,

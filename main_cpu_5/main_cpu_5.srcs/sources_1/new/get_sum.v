@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2022/01/01 19:03:37
+// Create Date: 2022/01/01 20:12:31
 // Design Name: 
-// Module Name: half_adder
+// Module Name: get_sum
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,13 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module half_adder(
-    a,b,sum,carry
+module get_sum(
+    P,pre0_3,sum
     );
-    input wire a;
-    input wire b;
-    output wire carry;
-    output wire sum;
-    assign sum=a^b;
-    assign carry=a&b;
+    input wire[3:0] P;
+    input wire[3:0] pre0_3;
+    output wire[3:0] sum;
+
+    assign sum[3:0]=P[3:0]^pre0_3[3:0];
 endmodule
