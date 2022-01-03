@@ -29,3 +29,22 @@
 `define zero_32 32'b0
 `define reg_data_bus 31:0
 `define reg_addr_bus 4:0
+`define r_enable 1'b1
+`define r_disable 1'b0
+`define w_enable 1'b1
+`define w_disable 1'b0
+`define zero_5 5'b0
+`define inform_width 55:0
+`define aluop_bus 7:0
+`define it_is 1'b1 
+`define it_is_not 1'b0
+
+
+`define special_op_1 6'b000000
+
+
+
+
+
+
+
