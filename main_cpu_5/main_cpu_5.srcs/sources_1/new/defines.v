@@ -27,3 +27,5 @@
 `define inst_addr 31:0
 `define inst_bus 31:0
 `define zero_32 32'b0
+`define reg_data_bus 31:0
+`define reg_addr_bus 4:0
