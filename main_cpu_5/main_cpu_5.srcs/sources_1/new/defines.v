@@ -36,11 +36,13 @@
 `define zero_5 5'b0
 `define inform_width 55:0
 `define aluop_bus 7:0
+`define alusel_bus 3:0
 `define it_is 1'b1 
 `define it_is_not 1'b0
 
 
 `define special_op_1 6'b000000
+`define special_op_2 6'b011100
 
 
 /*
@@ -49,6 +51,8 @@
 `define class_i 2'b10 
 `define class_j 2'b11
 */
+//---alusel_nop---//
+`define alusel_nop 4'b0000 
 
 //---alusel_logic---//
 `define alusel_logic 4'b0001
@@ -84,7 +88,8 @@
 `define EX_MTLO_O 8'b01010011 
 
 
-
+//---alusel_arthmetic---//
+`define alusel_arthmetic 4'b0100
 
 
 
