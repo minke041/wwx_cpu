@@ -43,6 +43,46 @@
 `define special_op_1 6'b000000
 
 
+/*
+`define class_no 2'b00
+`define class_r 2'b01 
+`define class_i 2'b10 
+`define class_j 2'b11
+*/
+
+//---alusel_logic---//
+`define alusel_logic 4'b0001
+
+`define EX_AND_O 8'b01100100
+`define EX_OR_O 8'b01100101
+`define EX_XOR_O 8'b01100110
+`define EX_NOR_O 8'b01100111
+
+`define EX_ANDI_O 8'b10001100
+`define EX_XORI_O 8'b10001110
+`define EX_LUI_O 8'b10001111
+`define EX_ORI_O 8'b10001101
+
+//---alusel_shift---//
+`define alusel_shift 4'b0010 
+
+`define EX_SLL_O 8'b01000000
+`define EX_SRL_O 8'b01000010
+`define EX_SRA_O 8'b01000011
+`define EX_SLLV_O 8'b01000100 
+`define EX_SRLV_O 8'b01000110
+`define EX_SRAV_O 8'b01000111
+
+//---alusel_move---//
+`define alusel_move 4'b0011 
+
+`define EX_MOVN_O 8'b01001011 
+`define EX_MOVZ_O 8'b01100001
+`define EX_MFHI_O 8'b01010000 
+`define EX_MFLO_O 8'b01010010 
+`define EX_MTHI_O 8'b01010001 
+`define EX_MTLO_O 8'b01010011 
+
 
 
 
