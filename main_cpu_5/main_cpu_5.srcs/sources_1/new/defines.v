@@ -53,6 +53,7 @@
 */
 //---alusel_nop---//
 `define alusel_nop 4'b0000 
+`define EXE_NOP_O 8'b0
 
 //---alusel_logic---//
 `define alusel_logic 4'b0001

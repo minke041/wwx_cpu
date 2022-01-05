@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../main_cpu_5.srcs/sources_1/new/class_choi.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/decode_main.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/decode_r.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/get_alusel.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/get_ope_data.v" \
+"../../../../main_cpu_5.srcs/sim_1/new/tb_decode_main.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
