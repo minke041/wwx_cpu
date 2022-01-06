@@ -29,7 +29,7 @@ module fetch(
     input wire clk;
     input wire rst;
     output reg fetch_en;
-    output reg[`inst_addr] fetch_addr;
+    output wire[`inst_addr] fetch_addr;
 
   always @(posedge clk) begin
       if (rst==`rst_enable) begin
@@ -39,11 +39,6 @@ module fetch(
       end 
   end
 
-  always @(posedge clk) begin
-      if (fetch_en==`fetch_disable) begin
-        fetch_addr <= 32'b0;
-      end else begin
-        fetch_addr <= fetch_addr + 32'b100;
-      end 
-  end
+  assign fetch_addr = (`fetch_enable)?fetch_addr + 4:`zero_32;
+  
 endmodule

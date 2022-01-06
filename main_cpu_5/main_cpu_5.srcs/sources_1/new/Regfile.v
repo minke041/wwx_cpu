@@ -23,8 +23,16 @@
 `define reg_number 32
 `include "defines.v"
 module Regfile(
-    clk,w_addr,w_data,w_en,r_addr_1,r_en_1,
-    r_addr_2,r_en_2,r_data_1,r_data_2
+    clk,
+    w_addr,
+    w_data,
+    w_en,
+    r_addr_1,
+    r_en_1,
+    r_addr_2,
+    r_en_2,
+    r_data_1,
+    r_data_2
     );
     input wire clk;
     input wire[`reg_addr_bus] w_addr;

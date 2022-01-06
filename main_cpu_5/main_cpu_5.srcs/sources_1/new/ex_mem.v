@@ -21,7 +21,14 @@
 
 `include "defines.v"
 module ex_mem(
-    clk,rst,w_en_ex,w_addr_ex,w_data_ex,w_data_mem,w_addr_mem,w_en_mem
+    clk,
+    rst,
+    w_en_ex,
+    w_addr_ex,
+    w_data_ex,
+    w_data_mem,
+    w_addr_mem,
+    w_en_mem
     );
     input wire clk;
     input wire rst;
