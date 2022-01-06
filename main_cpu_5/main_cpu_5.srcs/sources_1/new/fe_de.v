@@ -21,7 +21,12 @@
 
 `include "defines.v"
 module fe_de(
-    inst_rom,fetch_addr_fe,rst,clk,inst_de,fetch_addr_de,clk,rst
+    inst_rom,
+    fetch_addr_fe,
+    rst,
+    clk,
+    inst_de,
+    fetch_addr_de
     );
     input wire[`inst_bus] inst_rom;
     input wire[`inst_addr] fetch_addr_fe;

@@ -21,7 +21,16 @@
 
 `include "defines.v"
 module execute(
-    rst,ope_data_1_ex,ope_data_2_ex,w_en,w_addr,aluop_ex,alusel_ex,w_data_ex,w_en_ex,w_addr_ex
+    rst,
+    ope_data_1_ex,
+    ope_data_2_ex,
+    w_en,
+    w_addr,
+    aluop_ex,
+    alusel_ex,
+    w_data_ex,
+    w_en_ex,
+    w_addr_ex
     );
     input wire rst;
     input wire[`reg_data_bus] ope_data_1_ex;

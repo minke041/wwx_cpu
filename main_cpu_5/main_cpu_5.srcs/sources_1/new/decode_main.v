@@ -21,7 +21,27 @@
 
 `include "defines.v"
 module decode_main(
-    fetch_addr,inst,rst,r_data_1,r_data_2,r_en_1,r_addr_1,r_en_2,r_addr_2,aluop,alusel,w_en_de,w_addr_de,mem_w_en,mem_w_addr,mem_w_data,ex_w_en,ex_w_addr,ex_w_data,ope_data_1,ope_data_2
+    fetch_addr,
+    inst,
+    rst,
+    r_data_1,
+    r_data_2,
+    r_en_1,
+    r_addr_1,
+    r_en_2,
+    r_addr_2,
+    aluop,
+    alusel,
+    w_en_de,
+    w_addr_de,
+    mem_w_en,
+    mem_w_addr,
+    mem_w_data,
+    ex_w_en,
+    ex_w_addr,
+    ex_w_data,
+    ope_data_1,
+    ope_data_2
     );
     input wire[`inst_addr] fetch_addr;
     input wire[`inst_bus] inst;

@@ -21,7 +21,20 @@
 
 `include "defines.v"
 module de_ex(
-    clk,rst,ope_data_1_de,ope_data_2_de,w_en_de,w_addr_de,aluop_de,alusel_de,ope_data_1_ex,ope_data_2_ex,w_en_ex,w_addr_ex,aluop_ex,alusel_ex
+    clk,
+    rst,
+    ope_data_1_de,
+    ope_data_2_de,
+    w_en_de,
+    w_addr_de,
+    aluop_de,
+    alusel_de,
+    ope_data_1_ex,
+    ope_data_2_ex,
+    w_en_ex,
+    w_addr_ex,
+    aluop_ex,
+    alusel_ex
     );
     input wire clk;
     input wire rst;

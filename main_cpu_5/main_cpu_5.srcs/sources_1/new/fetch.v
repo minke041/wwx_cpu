@@ -21,7 +21,10 @@
 
 `include "defines.v"
 module fetch(
-    clk,rst,fetch_en,fetch_addr
+    clk,
+    rst,
+    fetch_en,
+    fetch_addr
     );
     input wire clk;
     input wire rst;
