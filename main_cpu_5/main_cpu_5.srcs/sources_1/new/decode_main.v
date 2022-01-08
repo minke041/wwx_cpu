@@ -87,16 +87,16 @@ module decode_main(
     wire[`reg_data_bus] ope_data_1_mid;
     wire[`reg_data_bus] ope_data_2_mid;
 
-    assign r_en_1 = (rst==`rst_disable)?`r_disable:r_en_1_mid;
-    assign r_en_2 = (rst==`rst_disable)?`r_disable:r_en_2_mid;
-    assign r_addr_1 = (rst==`rst_disable)?`zero_5:r_addr_1_mid;
-    assign r_addr_2 = (rst==`rst_disable)?`zero_5:r_addr_2_mid;
-    assign aluop = (rst==`rst_disable)?`EXE_NOP_O:aluop_mid;
-    assign alusel = (rst==`rst_disable)?`alusel_nop:alusel_mid;
-    assign w_en_de = (rst==`rst_disable)?`w_disable:w_en_mid;
-    assign w_addr_de = (rst==`rst_disable)?`zero_5:w_addr_mid;
-    assign ope_data_1 = (rst==`rst_disable)?`zero_32:ope_data_1_mid;
-    assign ope_data_2 = (rst==`rst_disable)?`zero_32:ope_data_2_mid;
+    assign r_en_1 = (rst==`rst_enable)?`r_disable:r_en_1_mid;
+    assign r_en_2 = (rst==`rst_enable)?`r_disable:r_en_2_mid;
+    assign r_addr_1 = (rst==`rst_enable)?`zero_5:r_addr_1_mid;
+    assign r_addr_2 = (rst==`rst_enable)?`zero_5:r_addr_2_mid;
+    assign aluop = (rst==`rst_enable)?`EXE_NOP_O:aluop_mid;
+    assign alusel = (rst==`rst_enable)?`alusel_nop:alusel_mid;
+    assign w_en_de = (rst==`rst_enable)?`w_disable:w_en_mid;
+    assign w_addr_de = (rst==`rst_enable)?`zero_5:w_addr_mid;
+    assign ope_data_1 = (rst==`rst_enable)?`zero_32:ope_data_1_mid;
+    assign ope_data_2 = (rst==`rst_enable)?`zero_32:ope_data_2_mid;
 
 
     
@@ -106,6 +106,12 @@ module decode_main(
     .inst(inst),
     .inform_r(inform_r),
     .is_class_r(is_class_r)
+    );
+
+    decode_i decode_i0(
+    .inst(inst),
+    .inform_i(inform_i),
+    .is_class_i(is_class_i)
     );
 
     class_choi class_choi0(

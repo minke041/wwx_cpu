@@ -1,3 +1,3 @@
 Vivado Simulator 2019.2
 Time resolution is 1 ps
-$finish called at time : 1 us : File "C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sim_1/new/tb_decode_main.v" Line 99
+$finish called at time : 1 us : File "C:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.srcs/sim_1/new/tb_small_cpu.v" Line 51

@@ -58,6 +58,16 @@
 //---alusel_logic---//
 `define alusel_logic 4'b0001
 
+`define EX_AND 6'b100100
+`define EX_OR 6'b100101
+`define EX_XOR 6'b100110
+`define EX_NOR 6'b100111
+
+`define EX_ANDI 6'b001100
+`define EX_XORI 6'b001110
+`define EX_LUI 6'b001111
+`define EX_ORI 6'b001101
+
 `define EX_AND_O 8'b01100100
 `define EX_OR_O 8'b01100101
 `define EX_XOR_O 8'b01100110

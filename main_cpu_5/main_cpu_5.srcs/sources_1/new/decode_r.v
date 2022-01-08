@@ -24,7 +24,9 @@
 `define class_3 2'b11 
 `include "defines.v"
 module decode_r(
-    inst,inform_r,is_class_r
+    inst,
+    inform_r,
+    is_class_r
     );
     input wire[`inst_bus] inst;
     output wire[`inform_width] inform_r;

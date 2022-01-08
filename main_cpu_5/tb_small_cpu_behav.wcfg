@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_small_cpu_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_small_cpu" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="12fs"></ZoomEndTime>
+      <Cursor1Time time="726024fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="192"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="60" />
+   <wvobject fp_name="/tb_small_cpu/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/inst" type="array">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/mem_we0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/mem_we0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/mem_we0/w_en_mem" type="logic">
+      <obj_property name="ElementShortName">w_en_mem</obj_property>
+      <obj_property name="ObjectShortName">w_en_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/mem_we0/w_addr_mem" type="array">
+      <obj_property name="ElementShortName">w_addr_mem[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr_mem[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/mem_we0/w_data_mem" type="array">
+      <obj_property name="ElementShortName">w_data_mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_data_mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/mem_we0/w_en" type="logic">
+      <obj_property name="ElementShortName">w_en</obj_property>
+      <obj_property name="ObjectShortName">w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/mem_we0/w_addr" type="array">
+      <obj_property name="ElementShortName">w_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/mem_we0/w_data" type="array">
+      <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/w_addr" type="array">
+      <obj_property name="ElementShortName">w_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/w_data" type="array">
+      <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/w_en" type="logic">
+      <obj_property name="ElementShortName">w_en</obj_property>
+      <obj_property name="ObjectShortName">w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/r_addr_1" type="array">
+      <obj_property name="ElementShortName">r_addr_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_addr_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/r_en_1" type="logic">
+      <obj_property name="ElementShortName">r_en_1</obj_property>
+      <obj_property name="ObjectShortName">r_en_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/r_addr_2" type="array">
+      <obj_property name="ElementShortName">r_addr_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_addr_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/r_en_2" type="logic">
+      <obj_property name="ElementShortName">r_en_2</obj_property>
+      <obj_property name="ObjectShortName">r_en_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/r_data_1" type="array">
+      <obj_property name="ElementShortName">r_data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/r_data_2" type="array">
+      <obj_property name="ElementShortName">r_data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/Regfile0/regs" type="array">
+      <obj_property name="ElementShortName">regs[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regs[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/fetch_addr" type="array">
+      <obj_property name="ElementShortName">fetch_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/inst" type="array">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_data_1" type="array">
+      <obj_property name="ElementShortName">r_data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_data_2" type="array">
+      <obj_property name="ElementShortName">r_data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/mem_w_en" type="logic">
+      <obj_property name="ElementShortName">mem_w_en</obj_property>
+      <obj_property name="ObjectShortName">mem_w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/mem_w_addr" type="array">
+      <obj_property name="ElementShortName">mem_w_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_w_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/mem_w_data" type="array">
+      <obj_property name="ElementShortName">mem_w_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_w_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/ex_w_en" type="logic">
+      <obj_property name="ElementShortName">ex_w_en</obj_property>
+      <obj_property name="ObjectShortName">ex_w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/ex_w_addr" type="array">
+      <obj_property name="ElementShortName">ex_w_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_w_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/ex_w_data" type="array">
+      <obj_property name="ElementShortName">ex_w_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_w_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_en_1" type="logic">
+      <obj_property name="ElementShortName">r_en_1</obj_property>
+      <obj_property name="ObjectShortName">r_en_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_en_2" type="logic">
+      <obj_property name="ElementShortName">r_en_2</obj_property>
+      <obj_property name="ObjectShortName">r_en_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_addr_1" type="array">
+      <obj_property name="ElementShortName">r_addr_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_addr_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_addr_2" type="array">
+      <obj_property name="ElementShortName">r_addr_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_addr_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/aluop" type="array">
+      <obj_property name="ElementShortName">aluop[7:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/alusel" type="array">
+      <obj_property name="ElementShortName">alusel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alusel[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/w_en_de" type="logic">
+      <obj_property name="ElementShortName">w_en_de</obj_property>
+      <obj_property name="ObjectShortName">w_en_de</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/w_addr_de" type="array">
+      <obj_property name="ElementShortName">w_addr_de[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr_de[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/ope_data_1" type="array">
+      <obj_property name="ElementShortName">ope_data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ope_data_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/ope_data_2" type="array">
+      <obj_property name="ElementShortName">ope_data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ope_data_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/inform_r" type="array">
+      <obj_property name="ElementShortName">inform_r[55:0]</obj_property>
+      <obj_property name="ObjectShortName">inform_r[55:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/inform_i" type="array">
+      <obj_property name="ElementShortName">inform_i[55:0]</obj_property>
+      <obj_property name="ObjectShortName">inform_i[55:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/inform_j" type="array">
+      <obj_property name="ElementShortName">inform_j[55:0]</obj_property>
+      <obj_property name="ObjectShortName">inform_j[55:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/is_class_r" type="logic">
+      <obj_property name="ElementShortName">is_class_r</obj_property>
+      <obj_property name="ObjectShortName">is_class_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/is_class_i" type="logic">
+      <obj_property name="ElementShortName">is_class_i</obj_property>
+      <obj_property name="ObjectShortName">is_class_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/is_class_j" type="logic">
+      <obj_property name="ElementShortName">is_class_j</obj_property>
+      <obj_property name="ObjectShortName">is_class_j</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_en_1_mid" type="logic">
+      <obj_property name="ElementShortName">r_en_1_mid</obj_property>
+      <obj_property name="ObjectShortName">r_en_1_mid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_en_2_mid" type="logic">
+      <obj_property name="ElementShortName">r_en_2_mid</obj_property>
+      <obj_property name="ObjectShortName">r_en_2_mid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_addr_1_mid" type="array">
+      <obj_property name="ElementShortName">r_addr_1_mid[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_addr_1_mid[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/r_addr_2_mid" type="array">
+      <obj_property name="ElementShortName">r_addr_2_mid[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_addr_2_mid[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/imme_mid" type="array">
+      <obj_property name="ElementShortName">imme_mid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imme_mid[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/aluop_mid" type="array">
+      <obj_property name="ElementShortName">aluop_mid[7:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop_mid[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/alusel_mid" type="array">
+      <obj_property name="ElementShortName">alusel_mid[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alusel_mid[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/w_en_mid" type="logic">
+      <obj_property name="ElementShortName">w_en_mid</obj_property>
+      <obj_property name="ObjectShortName">w_en_mid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/w_addr_mid" type="array">
+      <obj_property name="ElementShortName">w_addr_mid[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr_mid[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/ope_data_1_mid" type="array">
+      <obj_property name="ElementShortName">ope_data_1_mid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ope_data_1_mid[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_small_cpu/small_cpu0/decode_main0/ope_data_2_mid" type="array">
+      <obj_property name="ElementShortName">ope_data_2_mid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ope_data_2_mid[31:0]</obj_property>
+   </wvobject>
+</wave_config>
