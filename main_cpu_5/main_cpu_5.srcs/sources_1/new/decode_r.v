@@ -39,18 +39,33 @@ module decode_r(
     wire[`reg_addr_bus] sh=inst[10:6];
     wire[5:0] fun=inst[5:0];
     
-    assign is_class_r = (op==`special_op_1)?`it_is:`it_is_not;
+    assign is_class_r = (op==`special_op_1||op==`special_op_2)?`it_is:
+                        `it_is_not;
 
-    wire[1:0] class=(rs==5'b0)?`class_2:({rt,rd,sh}==15'b0)?`class_3:(sh==5'b0)?`class_1:`class_no;
+    wire[1:0] class=(rs==5'b0)?`class_2:
+                    ({rt,rd,sh}==15'b0)?`class_3:
+                    (sh==5'b0)?`class_1:
+                    `class_no;
 
 
-    wire r_en_1 = (class==`class_no)?`r_disable:`r_enable;
-    wire[`reg_addr_bus] r_addr_1 = (class==`class_1||class==`class_3)?rs:(class==`class_2)?rt:`zero_5;
-    wire r_en_2=(class==`class_1)?`r_enable:`r_disable;
-    wire[`reg_addr_bus] r_addr_2 = (class==`class_1)?rt:`zero_5;
-    wire[`reg_data_bus] imme=(class==`class_2)?{27'b0,sh}:`zero_32;
-    wire w_en = (class==`class_1||class==`class_2)?`w_enable:`w_disable;
-    wire[`reg_addr_bus] w_addr = (class==`class_1||class==`class_2)?rd:`zero_5;
+    wire r_en_1 = (class==`class_no)?`r_disable:
+                  `r_enable;
+
+    wire[`reg_addr_bus] r_addr_1 = (class==`class_1||class==`class_3)?rs:
+                                   (class==`class_2)?rt:
+                                   `zero_5;
+
+    wire r_en_2=(class==`class_1)?`r_enable:
+                `r_disable;
+    wire[`reg_addr_bus] r_addr_2 = (class==`class_1)?rt:
+                                   `zero_5;
+    wire[`reg_data_bus] imme=(class==`class_2)?{27'b0,sh}:
+                             `zero_32;
+
+    wire w_en = (class==`class_1||class==`class_2)?`w_enable:
+                `w_disable;
+    wire[`reg_addr_bus] w_addr = (class==`class_1||class==`class_2)?rd:
+                                 `zero_5;
 
     assign inform_r[`inform_width]={r_en_1,r_addr_1[`reg_addr_bus],r_en_2,r_addr_2[`reg_addr_bus],imme[`reg_data_bus],w_en,w_addr[`reg_addr_bus],fun[5:0]};
 

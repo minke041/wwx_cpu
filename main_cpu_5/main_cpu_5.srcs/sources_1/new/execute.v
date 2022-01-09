@@ -58,6 +58,13 @@ module execute(
     .w_data_logic(w_data_logic)
     );
 
+    exe_shift exe_shift0(
+    .ope_data_1(ope_data_1_ex),
+    .ope_data_2(ope_data_2_ex),
+    .aluop(aluop_ex),
+    .w_data_shift(w_data_shift)
+    );
+
     exe_choi exe_choi0(
     .alusel(alusel_ex),
     .w_data_logic(w_data_logic),

@@ -27,6 +27,7 @@
 `define inst_addr 31:0
 `define inst_bus 31:0
 `define zero_32 32'b0
+`define one_32 32'b11111111111111111111111111111111
 `define reg_data_bus 31:0
 `define reg_addr_bus 4:0
 `define r_enable 1'b1
@@ -80,6 +81,13 @@
 
 //---alusel_shift---//
 `define alusel_shift 4'b0010 
+
+`define EX_SLL 6'b000000
+`define EX_SRL 6'b000010
+`define EX_SRA 6'b000011
+`define EX_SLLV 6'b000100 
+`define EX_SRLV 6'b000110
+`define EX_SRAV 6'b000111
 
 `define EX_SLL_O 8'b01000000
 `define EX_SRL_O 8'b01000010

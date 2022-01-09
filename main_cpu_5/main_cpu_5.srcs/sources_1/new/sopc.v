@@ -19,8 +19,30 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`include "defines.v"
 module sopc(
-
+    clk,
+    rst 
     );
+    input wire clk;
+    input wire rst;
+
+    wire fetch_en;
+    wire[`inst_addr] fetch_addr;
+    wire[`inst_bus] inst;
+
+    rom rom0(
+    .fetch_en(fetch_en),
+    .fetch_addr(fetch_addr),
+    .inst(inst) 
+    );
+
+    small_cpu small_cpu0(
+    .clk(clk),
+    .rst(rst),
+    .inst(inst),
+    .fetch_en_o(fetch_en),
+    .fetch_addr_o(fetch_addr)
+    );
+
 endmodule
