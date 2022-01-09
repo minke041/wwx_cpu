@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../main_cpu_5.srcs/sources_1/new/Acc_memory.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/Regfile.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/class_choi.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/de_ex.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/decode_i.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/decode_main.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/decode_r.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/ex_mem.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/exe_choi.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/exe_logic.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/exe_shift.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/execute.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/fe_de.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/fetch.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/get_alusel.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/get_ope_data.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/mem_we.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/rom.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/small_cpu.v" \
+"../../../../main_cpu_5.srcs/sources_1/new/sopc.v" \
+"../../../../main_cpu_5.srcs/sim_1/new/tb_sopc.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

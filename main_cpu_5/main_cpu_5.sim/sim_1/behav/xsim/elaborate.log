@@ -1,6 +1,6 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 29876e07875f42e3851f825d0ea665c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_small_cpu_behav xil_defaultlib.tb_small_cpu xil_defaultlib.glbl -log elaborate.log 
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 29876e07875f42e3851f825d0ea665c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sopc_behav xil_defaultlib.tb_sopc xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -10,22 +10,26 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.rom
 Compiling module xil_defaultlib.fetch
 Compiling module xil_defaultlib.fe_de
 Compiling module xil_defaultlib.Regfile
 Compiling module xil_defaultlib.decode_r
+Compiling module xil_defaultlib.decode_i
 Compiling module xil_defaultlib.class_choi
 Compiling module xil_defaultlib.get_alusel
 Compiling module xil_defaultlib.get_ope_data
 Compiling module xil_defaultlib.decode_main
 Compiling module xil_defaultlib.de_ex
 Compiling module xil_defaultlib.exe_logic
+Compiling module xil_defaultlib.exe_shift
 Compiling module xil_defaultlib.exe_choi
 Compiling module xil_defaultlib.execute
 Compiling module xil_defaultlib.ex_mem
 Compiling module xil_defaultlib.Acc_memory
 Compiling module xil_defaultlib.mem_we
 Compiling module xil_defaultlib.small_cpu
-Compiling module xil_defaultlib.tb_small_cpu
+Compiling module xil_defaultlib.sopc
+Compiling module xil_defaultlib.tb_sopc
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_small_cpu_behav
+Built simulation snapshot tb_sopc_behav

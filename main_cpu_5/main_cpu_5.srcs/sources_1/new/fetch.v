@@ -39,7 +39,7 @@ module fetch(
       end 
   end
 
-  assign fetch_addr = (`fetch_enable)?fetch_addr + 4:
+  assign fetch_addr = (fetch_en==`fetch_enable)?fetch_addr + 4:
                       `zero_32;
   
 endmodule
