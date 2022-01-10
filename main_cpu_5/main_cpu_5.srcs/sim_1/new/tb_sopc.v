@@ -21,21 +21,23 @@
 
 
 module tb_sopc();
-    reg clk = 0;
-    reg rst = 1;
-    initial begin
-        forever begin
-            #10 clk = ~clk;
-            #100 rst = ~rst;
-        end
-    end
+    reg     clk=0;
+  reg     rst=1;
 
+  always #10 clk =~clk;
+  initial begin
+    rst = 1'b1;
+    #20 rst = ~rst;
+    
+  end
+       
+  
+      
+  
     sopc sopc0(
     .clk(clk),
     .rst(rst) 
     );
 
-    initial begin
-        #5000 $finish;
-    end
+    
 endmodule

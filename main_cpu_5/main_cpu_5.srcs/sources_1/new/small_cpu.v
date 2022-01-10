@@ -172,8 +172,8 @@ module small_cpu(
     .clk(clk),
     .rst(rst),
     .w_en_ex(ex_w_en),
-    .w_addr_ex(ex_w_data),
-    .w_data_ex(ex_w_addr),
+    .w_addr_ex(ex_w_addr),
+    .w_data_ex(ex_w_data),
     .w_data_mem(ex_mem_w_data),
     .w_addr_mem(ex_mem_w_addr),
     .w_en_mem(ex_mem_w_en)

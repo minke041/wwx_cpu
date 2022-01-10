@@ -1,0 +1,452 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/13773/Desktop/corn/wwx_cpu/wwx_cpu/main_cpu_5/main_cpu_5.sim/sim_1/behav/modelsim
+vAcc_memory
+Z1 !s110 1641718493
+!i10b 1
+!s100 T?LHIGN[QeOe_7QJoeNPN2
+IEUhCzi^6CECmYlh``oOQ:0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1641481574
+8../../../../main_cpu_5.srcs/sources_1/new/Acc_memory.v
+F../../../../main_cpu_5.srcs/sources_1/new/Acc_memory.v
+Z3 L0 23
+Z4 OL;L;10.4;61
+r1
+!s85 0
+31
+Z5 !s108 1641718493.164000
+Z6 !s107 ..\..\..\..\main_cpu_5.srcs\sources_1\new\defines.v|../../../../main_cpu_5.srcs/sim_1/new/tb_sopc.v|../../../../main_cpu_5.srcs/sources_1/new/sopc.v|../../../../main_cpu_5.srcs/sources_1/new/small_cpu.v|../../../../main_cpu_5.srcs/sources_1/new/rom.v|../../../../main_cpu_5.srcs/sources_1/new/mem_we.v|../../../../main_cpu_5.srcs/sources_1/new/get_ope_data.v|../../../../main_cpu_5.srcs/sources_1/new/get_alusel.v|../../../../main_cpu_5.srcs/sources_1/new/fetch.v|../../../../main_cpu_5.srcs/sources_1/new/fe_de.v|../../../../main_cpu_5.srcs/sources_1/new/execute.v|../../../../main_cpu_5.srcs/sources_1/new/exe_shift.v|../../../../main_cpu_5.srcs/sources_1/new/exe_logic.v|../../../../main_cpu_5.srcs/sources_1/new/exe_choi.v|../../../../main_cpu_5.srcs/sources_1/new/ex_mem.v|../../../../main_cpu_5.srcs/sources_1/new/decode_r.v|../../../../main_cpu_5.srcs/sources_1/new/decode_main.v|../../../../main_cpu_5.srcs/sources_1/new/decode_i.v|../../../../main_cpu_5.srcs/sources_1/new/de_ex.v|../../../../main_cpu_5.srcs/sources_1/new/class_choi.v|../../../../main_cpu_5.srcs/sources_1/new/Regfile.v|../../../../main_cpu_5.srcs/sources_1/new/Acc_memory.v|
+Z7 !s90 -64|-incr|-work|xil_defaultlib|../../../../main_cpu_5.srcs/sources_1/new/Acc_memory.v|../../../../main_cpu_5.srcs/sources_1/new/Regfile.v|../../../../main_cpu_5.srcs/sources_1/new/class_choi.v|../../../../main_cpu_5.srcs/sources_1/new/de_ex.v|../../../../main_cpu_5.srcs/sources_1/new/decode_i.v|../../../../main_cpu_5.srcs/sources_1/new/decode_main.v|../../../../main_cpu_5.srcs/sources_1/new/decode_r.v|../../../../main_cpu_5.srcs/sources_1/new/ex_mem.v|../../../../main_cpu_5.srcs/sources_1/new/exe_choi.v|../../../../main_cpu_5.srcs/sources_1/new/exe_logic.v|../../../../main_cpu_5.srcs/sources_1/new/exe_shift.v|../../../../main_cpu_5.srcs/sources_1/new/execute.v|../../../../main_cpu_5.srcs/sources_1/new/fe_de.v|../../../../main_cpu_5.srcs/sources_1/new/fetch.v|../../../../main_cpu_5.srcs/sources_1/new/get_alusel.v|../../../../main_cpu_5.srcs/sources_1/new/get_ope_data.v|../../../../main_cpu_5.srcs/sources_1/new/mem_we.v|../../../../main_cpu_5.srcs/sources_1/new/rom.v|../../../../main_cpu_5.srcs/sources_1/new/small_cpu.v|../../../../main_cpu_5.srcs/sources_1/new/sopc.v|../../../../main_cpu_5.srcs/sim_1/new/tb_sopc.v|
+!i113 0
+Z8 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@acc_memory
+vclass_choi
+R1
+!i10b 1
+!s100 ^W97Y=ah_OH>bH_Uzo59U1
+I;SDdIXJhIJD7`[_V6b<Ch0
+R2
+R0
+w1641212354
+8../../../../main_cpu_5.srcs/sources_1/new/class_choi.v
+F../../../../main_cpu_5.srcs/sources_1/new/class_choi.v
+L0 29
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vde_ex
+R1
+!i10b 1
+!s100 g_UD^8IZ5;8QA:]OGkJcc2
+I4h]EXCgMP7]Gc2bzHMAE<0
+R2
+R0
+w1641480103
+8../../../../main_cpu_5.srcs/sources_1/new/de_ex.v
+F../../../../main_cpu_5.srcs/sources_1/new/de_ex.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vdecode_i
+R1
+!i10b 1
+!s100 _E81Ak4DFcDB6DCYc``Ab0
+I[_n0fhEdYl3M`n;K3?A[;2
+R2
+R0
+w1641622002
+8../../../../main_cpu_5.srcs/sources_1/new/decode_i.v
+F../../../../main_cpu_5.srcs/sources_1/new/decode_i.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vdecode_main
+R1
+!i10b 1
+!s100 ]6hLG3YdBcP^ZcPb3Tn2`3
+IfW0i^P`EjPlVn[:AUi4VF2
+R2
+R0
+w1641622141
+8../../../../main_cpu_5.srcs/sources_1/new/decode_main.v
+F../../../../main_cpu_5.srcs/sources_1/new/decode_main.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vdecode_r
+R1
+!i10b 1
+!s100 7O[>zg:h>e^bTC^;7CfO82
+IB=4GVmgl:NaohW0U[2Y7c2
+R2
+R0
+w1641633602
+8../../../../main_cpu_5.srcs/sources_1/new/decode_r.v
+F../../../../main_cpu_5.srcs/sources_1/new/decode_r.v
+L0 26
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vex_mem
+R1
+!i10b 1
+!s100 i0`JU1zD3V:TFz[B?aBfa0
+IZK<ojXbcXm3NNEjgVOeUC0
+R2
+R0
+w1641501186
+8../../../../main_cpu_5.srcs/sources_1/new/ex_mem.v
+F../../../../main_cpu_5.srcs/sources_1/new/ex_mem.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vexe_choi
+R1
+!i10b 1
+!s100 a3Kn8Va]^e=ClA:QWLX9o1
+IzC0b7:m5JnPGWOeI?=YGO1
+R2
+R0
+w1641633231
+8../../../../main_cpu_5.srcs/sources_1/new/exe_choi.v
+F../../../../main_cpu_5.srcs/sources_1/new/exe_choi.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vexe_logic
+R1
+!i10b 1
+!s100 lBZ8?m4]AFddKF5ek8CUm1
+INQ7J9dlhcRZTCo^YcI[_G0
+R2
+R0
+w1641633914
+8../../../../main_cpu_5.srcs/sources_1/new/exe_logic.v
+F../../../../main_cpu_5.srcs/sources_1/new/exe_logic.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vexe_shift
+R1
+!i10b 1
+!s100 ??6Z^;5XzSMEzc0CD<kJF2
+IX4:BE8Yle?@Ck60iQO`3M1
+R2
+R0
+w1641637207
+8../../../../main_cpu_5.srcs/sources_1/new/exe_shift.v
+F../../../../main_cpu_5.srcs/sources_1/new/exe_shift.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vexecute
+R1
+!i10b 1
+!s100 R4nn9:FS_1C=l6@CXgUaH3
+I3NU3WWRT_4`Q1@;]H@Xg?3
+R2
+R0
+w1641690127
+8../../../../main_cpu_5.srcs/sources_1/new/execute.v
+F../../../../main_cpu_5.srcs/sources_1/new/execute.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vfe_de
+R1
+!i10b 1
+!s100 YW5HzDA8Y4QWOCL:A]COo1
+IRiT;aUW`aUa@8^h@_SoZ12
+R2
+R0
+w1641479728
+8../../../../main_cpu_5.srcs/sources_1/new/fe_de.v
+F../../../../main_cpu_5.srcs/sources_1/new/fe_de.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vfetch
+R1
+!i10b 1
+!s100 ZZfDR]F<D3Vkaa;7b5E]<1
+IcVo^]bOeH1T]5mkcY==[l0
+R2
+R0
+w1641714704
+8../../../../main_cpu_5.srcs/sources_1/new/fetch.v
+F../../../../main_cpu_5.srcs/sources_1/new/fetch.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vget_alusel
+R1
+!i10b 1
+!s100 =G6o_UJ4HFO;@TUXGLJjA1
+IU3nHVn[3Hf?I]QcmXLjo11
+R2
+R0
+w1641633656
+8../../../../main_cpu_5.srcs/sources_1/new/get_alusel.v
+F../../../../main_cpu_5.srcs/sources_1/new/get_alusel.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vget_ope_data
+R1
+!i10b 1
+!s100 em=z]423gWCF_Ta^@bXg92
+IPoU^>L[^^cdem]MHLo[Vo3
+R2
+R0
+w1641285401
+8../../../../main_cpu_5.srcs/sources_1/new/get_ope_data.v
+F../../../../main_cpu_5.srcs/sources_1/new/get_ope_data.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vglbl
+R1
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+I`Mbk0oHiBm0dNc:a>md]<3
+R2
+R0
+w1573089660
+8glbl.v
+Fglbl.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1641718493.306000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R8
+vmem_we
+R1
+!i10b 1
+!s100 3aOPMdb<m[4WZ@@ZA?QzX2
+IP<hmJ@67?IED^A6ggMDMY3
+R2
+R0
+w1641482454
+8../../../../main_cpu_5.srcs/sources_1/new/mem_we.v
+F../../../../main_cpu_5.srcs/sources_1/new/mem_we.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vRegfile
+R1
+!i10b 1
+!s100 ^MHY]Sd?eF4EQOSQFIJ8k0
+IHA2hj>i_HcIF=70C:geCZ3
+R2
+R0
+w1641633386
+8../../../../main_cpu_5.srcs/sources_1/new/Regfile.v
+F../../../../main_cpu_5.srcs/sources_1/new/Regfile.v
+L0 25
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n@regfile
+vrom
+R1
+!i10b 1
+!s100 LVS=>X_IOdJ>b3o=3]Uc:1
+Ih>N`7_`[AhL04G]8@9QF53
+R2
+R0
+w1641713043
+8../../../../main_cpu_5.srcs/sources_1/new/rom.v
+F../../../../main_cpu_5.srcs/sources_1/new/rom.v
+L0 24
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vsmall_cpu
+R1
+!i10b 1
+!s100 `j4GPfzZeWImMdfVCKLBz0
+IXomo_[fjgJI@AiCDTDj]T3
+R2
+R0
+w1641502316
+8../../../../main_cpu_5.srcs/sources_1/new/small_cpu.v
+F../../../../main_cpu_5.srcs/sources_1/new/small_cpu.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vsopc
+R1
+!i10b 1
+!s100 hj9;50=YOX@khakO>i6380
+I>ZJlQnLfC>QM4VQEb]3ZW2
+R2
+R0
+w1641694253
+8../../../../main_cpu_5.srcs/sources_1/new/sopc.v
+F../../../../main_cpu_5.srcs/sources_1/new/sopc.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+vtb_sopc
+R1
+!i10b 1
+!s100 <TVjo3iAcI_lK^]4J3<O>3
+ImXA5YIfmh4=>dn;Le6?o;3
+R2
+R0
+w1641718384
+8../../../../main_cpu_5.srcs/sim_1/new/tb_sopc.v
+F../../../../main_cpu_5.srcs/sim_1/new/tb_sopc.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8

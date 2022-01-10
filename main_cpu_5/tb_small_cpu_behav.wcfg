@@ -11,15 +11,31 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2465150fs"></ZoomStartTime>
-      <ZoomEndTime time="2465305fs"></ZoomEndTime>
-      <Cursor1Time time="5000000fs"></Cursor1Time>
+      <ZoomStartTime time="134265331005fs"></ZoomStartTime>
+      <ZoomEndTime time="134265649506fs"></ZoomEndTime>
+      <Cursor1Time time="163000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="192"></NameColumnWidth>
+      <NameColumnWidth column_width="174"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/fetch0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/fetch0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/fetch0/fetch_en" type="logic">
+      <obj_property name="ElementShortName">fetch_en</obj_property>
+      <obj_property name="ObjectShortName">fetch_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/fetch0/fetch_addr" type="array">
+      <obj_property name="ElementShortName">fetch_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_addr[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/Regfile0/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -63,21 +79,6 @@
    <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/Regfile0/regs" type="array">
       <obj_property name="ElementShortName">regs[31:0][31:0]</obj_property>
       <obj_property name="ObjectShortName">regs[31:0][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/fetch0/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/fetch0/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/fetch0/fetch_en" type="logic">
-      <obj_property name="ElementShortName">fetch_en</obj_property>
-      <obj_property name="ObjectShortName">fetch_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_sopc/sopc0/small_cpu0/fetch0/fetch_addr" type="array">
-      <obj_property name="ElementShortName">fetch_addr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">fetch_addr[31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>
