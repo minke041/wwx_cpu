@@ -50,6 +50,8 @@ module execute(
     
     wire[`reg_data_bus] w_data_logic;
     wire[`reg_data_bus] w_data_shift;
+    wire[`reg_data_bus] w_data_move;
+
 
     exe_logic exe_logic0(
     .ope_data_1(ope_data_1_ex),
@@ -65,10 +67,18 @@ module execute(
     .w_data_shift(w_data_shift)
     );
 
+    exe_move exe_move0(
+    .ope_data_1(ope_data_1_ex),
+    .ope_data_2(ope_data_2_ex),
+    .aluop(aluop_ex),
+    .w_data_move(w_data_move)
+    );
+
     exe_choi exe_choi0(
     .alusel(alusel_ex),
     .w_data_logic(w_data_logic),
     .w_data_shift(w_data_shift),
+    .w_data_move(w_data_move),
     .w_data(w_data_mid)
     );
 

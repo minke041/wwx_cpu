@@ -21,7 +21,9 @@
 
 `include "defines.v"
 module get_alusel(
-    inst,aluop,alusel 
+    inst,
+    aluop,
+    alusel 
     );
     input wire[`inst_bus] inst;
     input wire[`aluop_bus] aluop;
