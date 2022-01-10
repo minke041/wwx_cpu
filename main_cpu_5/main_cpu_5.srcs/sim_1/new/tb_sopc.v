@@ -25,10 +25,9 @@ module tb_sopc();
   reg     rst=1;
 
   always #10 clk =~clk;
+  always #1000 rst = ~rst;
   initial begin
-    rst = 1'b1;
-    #20 rst = ~rst;
-    
+    #10000 $finish;
   end
        
   

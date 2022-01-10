@@ -31,6 +31,6 @@ module rom(
     output wire[`inst_bus] inst;
 
     reg[`inst_bus] inst_mem[`inst_mem_num:0];
-    initial $readmemh ("C:/Users/13773/Desktop/corn/inst_rom_data/5-1.data",inst_mem);
+    initial $readmemh ("C:/Users/13773/Desktop/corn/inst_rom_data/5-2.data",inst_mem);
     assign inst = (fetch_en==`fetch_enable)?inst_mem[fetch_addr[`inst_mem_num_log+1:2]]:`zero_32;
 endmodule

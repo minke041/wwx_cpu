@@ -31,14 +31,17 @@ module fetch(
     output reg fetch_en;
     output reg[`inst_addr] fetch_addr;
 
+    reg[`inst_addr] fetch_addr_now;
     wire[`inst_addr] fetch_addr_next = fetch_addr + 4;
   always @(posedge clk) begin
       if (rst==`rst_enable) begin
         fetch_en <= `fetch_disable;
         fetch_addr <= `zero_32;
+        fetch_addr_now <= `zero_32;
       end else begin
         fetch_en <= `fetch_enable;
-        fetch_addr <= fetch_addr_next;
+        fetch_addr <= fetch_addr_now;
+        fetch_addr_now <= fetch_addr_next;
       end 
   end
 
