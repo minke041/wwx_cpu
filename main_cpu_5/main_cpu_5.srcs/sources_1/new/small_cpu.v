@@ -157,6 +157,9 @@ module small_cpu(
     wire[`reg_data_bus] hi_w_data_we;
     wire[`reg_data_bus] lo_w_data_we;
     wire hilo_w_en_we;
+    wire hilo_w_en_ex;
+    wire[`reg_data_bus] hi_w_data_ex;
+    wire[`reg_data_bus] lo_w_data_ex;
     
     execute execute0(
     .rst(rst),
@@ -186,8 +189,8 @@ module small_cpu(
     wire[`reg_addr_bus] ex_mem_w_addr;
     wire[`reg_data_bus] ex_mem_w_data;
     wire hilo_w_en_ex_mem;
-    wire[`reg_addr_bus] hi_w_data_ex_mem;
-    wire[`reg_addr_bus] lo_w_data_ex_mem;
+    wire[`reg_data_bus] hi_w_data_ex_mem;
+    wire[`reg_data_bus] lo_w_data_ex_mem;
 
     ex_mem ex_mem0(
     .clk(clk),

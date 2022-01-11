@@ -42,8 +42,7 @@ module exe_move(
     wire[`reg_data_bus] hi_w_data_move = (aluop==`EX_MTHI_O)?ope_data_1:`zero_32;
     wire[`reg_data_bus] lo_w_data_move = (aluop==`EX_MTLO_O)?ope_data_1:`zero_32;
 
-    assign w_data_move = (aluop==`EX_MOVN_O)?((ope_data_2==`zero_32)?`zero_32:ope_data_1):
-                         (aluop==`EX_MOVZ_O)?((ope_data_2==`zero_32)?ope_data_1:`zero_32):
+    assign w_data_move = (aluop==`EX_MOVN_O||aluop==`EX_MOVZ_O)?ope_data_1:
                          (aluop==`EX_MFHI_O)?hi_r_data:
                          (aluop==`EX_MFLO_O)?lo_r_data:
                          `zero_32;

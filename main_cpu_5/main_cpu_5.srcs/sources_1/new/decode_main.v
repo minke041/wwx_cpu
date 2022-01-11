@@ -93,7 +93,7 @@ module decode_main(
     assign r_addr_2 = (rst==`rst_enable)?`zero_5:r_addr_2_mid;
     assign aluop = (rst==`rst_enable)?`EXE_NOP_O:aluop_mid;
     assign alusel = (rst==`rst_enable)?`alusel_nop:alusel_mid;
-    assign w_en_de = (rst==`rst_enable)?`w_disable:w_en_mid;
+    assign w_en_de = (rst==`rst_enable||(aluop_mid==`EX_MOVN_O&&r_data_2==`zero_32)||(aluop_mid==`EX_MOVZ_O&&r_data_2!=`zero_32))?`w_disable:w_en_mid;
     assign w_addr_de = (rst==`rst_enable)?`zero_5:w_addr_mid;
     assign ope_data_1 = (rst==`rst_enable)?`zero_32:ope_data_1_mid;
     assign ope_data_2 = (rst==`rst_enable)?`zero_32:ope_data_2_mid;

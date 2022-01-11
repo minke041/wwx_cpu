@@ -101,7 +101,7 @@
 `define alusel_move 4'b0011 
 
 `define EX_MOVN 6'b001011 
-`define EX_MOVZ 6'b100001
+`define EX_MOVZ 6'b001010
 
 `define EX_MFHI 6'b010000 
 `define EX_MFLO 6'b010010 
@@ -109,7 +109,7 @@
 `define EX_MTLO 6'b010011 
 
 `define EX_MOVN_O 8'b01001011 
-`define EX_MOVZ_O 8'b01100001
+`define EX_MOVZ_O 8'b01001010
 
 `define EX_MFHI_O 8'b01010000 
 `define EX_MFLO_O 8'b01010010 

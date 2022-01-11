@@ -132,7 +132,7 @@ module execute(
     hilo_inform_choi hilo_inform_choi0(
     .hilo_inform_move(hilo_inform_move),
     .hilo_inform_arthmetic(hilo_inform_arthmetic),
-    .alusel(alusel),
+    .alusel(alusel_ex),
     .hilo_w_en_ex(hilo_w_en_ex),
     .hi_w_data_ex(hi_w_data_ex),
     .lo_w_data_ex(lo_w_data_ex)

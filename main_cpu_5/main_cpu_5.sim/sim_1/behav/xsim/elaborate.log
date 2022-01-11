@@ -19,13 +19,17 @@ Compiling module xil_defaultlib.get_alusel
 Compiling module xil_defaultlib.get_ope_data
 Compiling module xil_defaultlib.decode_main
 Compiling module xil_defaultlib.de_ex
+Compiling module xil_defaultlib.get_hilo_data
 Compiling module xil_defaultlib.exe_logic
 Compiling module xil_defaultlib.exe_shift
+Compiling module xil_defaultlib.exe_move
 Compiling module xil_defaultlib.exe_choi
+Compiling module xil_defaultlib.hilo_inform_choi
 Compiling module xil_defaultlib.execute
 Compiling module xil_defaultlib.ex_mem
 Compiling module xil_defaultlib.Acc_memory
 Compiling module xil_defaultlib.mem_we
+Compiling module xil_defaultlib.hilo
 Compiling module xil_defaultlib.small_cpu
 Compiling module xil_defaultlib.sopc
 Compiling module xil_defaultlib.tb_sopc

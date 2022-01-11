@@ -52,7 +52,7 @@ module Regfile(
         end 
     end
     //read
-    assign r_data_1 = (r_en_1)?((r_addr_1 == 5'b0)?32'b0:(w_en||w_addr==r_addr_1)?w_data:regs[r_addr_1]):32'b0;
-    assign r_data_2 = (r_en_2)?((r_addr_2 == 5'b0)?32'b0:(w_en||w_addr==r_addr_2)?w_data:regs[r_addr_2]):32'b0;
+    assign r_data_1 = (r_en_1)?((r_addr_1 == 5'b0)?32'b0:(w_en&&w_addr==r_addr_1)?w_data:regs[r_addr_1]):32'b0;
+    assign r_data_2 = (r_en_2)?((r_addr_2 == 5'b0)?32'b0:(w_en&&w_addr==r_addr_2)?w_data:regs[r_addr_2]):32'b0;
     
 endmodule

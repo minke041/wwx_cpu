@@ -35,5 +35,5 @@ module get_ope_data(
     input wire[`reg_data_bus] ex_w_data;
     output wire[`reg_data_bus] ope_data;
 
-    assign ope_data = (r_en==`r_disable)?imme:(ex_w_en==`r_enable&&ex_w_addr==r_addr)?ex_w_data:(mem_w_en==`r_enable&&mem_w_addr==r_addr)?mem_w_data:r_data;
+    assign ope_data = (r_en==`r_disable)?imme:(ex_w_en==`w_enable&&ex_w_addr==r_addr)?ex_w_data:(mem_w_en==`w_enable&&mem_w_addr==r_addr)?mem_w_data:r_data;
 endmodule
