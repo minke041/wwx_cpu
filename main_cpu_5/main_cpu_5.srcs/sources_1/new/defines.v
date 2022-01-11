@@ -36,6 +36,7 @@
 `define w_disable 1'b0
 `define zero_5 5'b0
 `define inform_width 55:0
+`define hilo_inform_width 64:0
 `define aluop_bus 7:0
 `define alusel_bus 3:0
 `define it_is 1'b1 

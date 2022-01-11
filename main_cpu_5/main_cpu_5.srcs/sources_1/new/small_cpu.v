@@ -148,9 +148,16 @@ module small_cpu(
     .aluop_ex(de_ex_aluop),
     .alusel_ex(de_ex_alusel)
     );
-
+    //to exe 
+    wire[`reg_data_bus] hi_r_data_hilo;
+    wire[`reg_data_bus] lo_r_data_hilo;
+    wire[`reg_data_bus] hi_w_data_mem;
+    wire[`reg_data_bus] lo_w_data_mem;
+    wire hilo_w_en_mem;
+    wire[`reg_data_bus] hi_w_data_we;
+    wire[`reg_data_bus] lo_w_data_we;
+    wire hilo_w_en_we;
     
-
     execute execute0(
     .rst(rst),
     .ope_data_1_ex(de_ex_ope_data_1),
@@ -161,12 +168,26 @@ module small_cpu(
     .alusel_ex(de_ex_alusel),
     .w_data_ex(ex_w_data),
     .w_en_ex(ex_w_en),
-    .w_addr_ex(ex_w_addr)
+    .w_addr_ex(ex_w_addr),
+    .hi_r_data_hilo(hi_r_data_hilo),
+    .lo_r_data_hilo(lo_r_data_hilo),
+    .hi_w_data_mem(hi_w_data_mem),
+    .lo_w_data_mem(lo_w_data_mem),
+    .hilo_w_en_mem(hilo_w_en_mem),
+    .hi_w_data_we(hi_w_data_we),
+    .lo_w_data_we(lo_w_data_we),
+    .hilo_w_en_we(hilo_w_en_we),
+    .hilo_w_en_ex(hilo_w_en_ex),
+    .hi_w_data_ex(hi_w_data_ex),
+    .lo_w_data_ex(lo_w_data_ex)
     );
     //related to ex_mem
     wire ex_mem_w_en;
     wire[`reg_addr_bus] ex_mem_w_addr;
     wire[`reg_data_bus] ex_mem_w_data;
+    wire hilo_w_en_ex_mem;
+    wire[`reg_addr_bus] hi_w_data_ex_mem;
+    wire[`reg_addr_bus] lo_w_data_ex_mem;
 
     ex_mem ex_mem0(
     .clk(clk),
@@ -174,16 +195,29 @@ module small_cpu(
     .w_en_ex(ex_w_en),
     .w_addr_ex(ex_w_addr),
     .w_data_ex(ex_w_data),
+    .hilo_w_en_ex(hilo_w_en_ex),
+    .hi_w_data_ex(hi_w_data_ex),
+    .lo_w_data_ex(lo_w_data_ex),
+    .hilo_w_en_ex_mem(hilo_w_en_ex_mem),
+    .hi_w_data_ex_mem(hi_w_data_ex_mem),
+    .lo_w_data_ex_mem(lo_w_data_ex_mem),
     .w_data_mem(ex_mem_w_data),
     .w_addr_mem(ex_mem_w_addr),
     .w_en_mem(ex_mem_w_en)
     );
 
+   
     Acc_memory Acc_memory0(
     .rst(rst),
     .w_data(ex_mem_w_data),
     .w_addr(ex_mem_w_addr),
     .w_en(ex_mem_w_en),
+    .hilo_w_en_ex_mem(hilo_w_en_ex_mem),
+    .hi_w_data_ex_mem(hi_w_data_ex_mem),
+    .lo_w_data_ex_mem(lo_w_data_ex_mem),
+    .hilo_w_en_mem(hilo_w_en_mem),
+    .hi_w_data_mem(hi_w_data_mem),
+    .lo_w_data_mem(lo_w_data_mem),
     .w_data_mem(mem_w_data),
     .w_addr_mem(mem_w_addr),
     .w_en_mem(mem_w_en)
@@ -195,11 +229,25 @@ module small_cpu(
     .w_en_mem(mem_w_en),
     .w_addr_mem(mem_w_addr),
     .w_data_mem(mem_w_data),
+    .hilo_w_en_mem(hilo_w_en_mem),
+    .hi_w_data_mem(hi_w_data_mem),
+    .lo_w_data_mem(lo_w_data_mem),
+    .hilo_w_en_mem_we(hilo_w_en_we),
+    .hi_w_data_mem_we(hi_w_data_we),
+    .lo_w_data_mem_we(lo_w_data_we),
     .w_en(reg_w_en),
     .w_addr(reg_w_addr),
     .w_data(reg_w_data)
     );
 
-
+    hilo hilo0(
+    .rst(rst),
+    .clk(clk),
+    .hilo_w_en(hilo_w_en_we),
+    .hi_w_data(hi_w_data_we),
+    .lo_w_data(lo_w_data_we),
+    .hi_r_data(hi_r_data_hilo),
+    .lo_r_data(lo_r_data_hilo)
+    );
 
 endmodule

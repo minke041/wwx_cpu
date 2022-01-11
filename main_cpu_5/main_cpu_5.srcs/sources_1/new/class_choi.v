@@ -44,7 +44,7 @@ module class_choi(
     output wire w_en;
     output wire[`reg_addr_bus] w_addr;
 
-   wire[1:0] class=(is_class_r)?`class_r:(is_class_i)?`class_i:(is_class_j)?`class_j:`class_no;
+    wire[1:0] class=(is_class_r)?`class_r:(is_class_i)?`class_i:(is_class_j)?`class_j:`class_no;
     wire[5:0] fun;
 
     assign {r_en_1,r_addr_1[`reg_addr_bus],r_en_2,r_addr_2[`reg_addr_bus],imme[`reg_data_bus],w_en,w_addr[`reg_addr_bus],fun[5:0]} = (class==`class_r)?inform_r:(class==`class_i)?inform_i:(class==`class_j)?inform_j:{56'b0};
