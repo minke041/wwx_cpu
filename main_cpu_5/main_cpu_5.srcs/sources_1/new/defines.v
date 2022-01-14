@@ -42,6 +42,15 @@
 `define it_is 1'b1 
 `define it_is_not 1'b0
 
+//stall 
+`define stall_bus 5:0
+`define stall_enable 1'b1
+`define stall_disable 1'b0
+`define stall_req_enable 1'b1
+`define stall_req_disable 1'b0
+`define stall_de 6'b000111 
+`define stall_ex 6'b001111
+`define stall_no 6'b000000
 
 `define special_op_1 6'b000000
 `define special_op_2 6'b011100
@@ -119,6 +128,11 @@
 
 //---alusel_arthmetic---//
 `define alusel_arthmetic 4'b0100
+
+
+
+
+
 
 
 //---

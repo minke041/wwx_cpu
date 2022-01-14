@@ -41,7 +41,8 @@ module decode_main(
     ex_w_addr,
     ex_w_data,
     ope_data_1,
-    ope_data_2
+    ope_data_2,
+    stall_req_de
     );
     input wire[`inst_addr] fetch_addr;
     input wire[`inst_bus] inst;
@@ -64,6 +65,7 @@ module decode_main(
     output wire[`reg_addr_bus] w_addr_de;
     output wire[`reg_data_bus] ope_data_1;
     output wire[`reg_data_bus] ope_data_2;
+    output wire stall_req_de;
 
 
     wire[`inform_width] inform_r;

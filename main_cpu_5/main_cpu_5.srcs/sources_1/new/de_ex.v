@@ -34,7 +34,8 @@ module de_ex(
     w_en_ex,
     w_addr_ex,
     aluop_ex,
-    alusel_ex
+    alusel_ex,
+    stall 
     );
     input wire clk;
     input wire rst;
@@ -44,6 +45,7 @@ module de_ex(
     input wire[`reg_addr_bus] w_addr_de;
     input wire[`aluop_bus] aluop_de;
     input wire[`alusel_bus] alusel_de;
+    input wire[`stall_bus] stall;
     output reg[`reg_data_bus] ope_data_1_ex;
     output reg[`reg_data_bus] ope_data_2_ex;
     output reg w_en_ex;
@@ -59,7 +61,14 @@ module de_ex(
             w_addr_ex <= `zero_5;
             aluop_ex <= `EXE_NOP_O;
             alusel_ex <= `alusel_nop;
-        end else begin
+        end else if (stall[2]==`stall_enable&&stall[3]==`stall_disable) begin
+            ope_data_1_ex <= `zero_32;
+            ope_data_2_ex <= `zero_32;
+            w_en_ex <= `w_disable;
+            w_addr_ex <= `zero_5;
+            aluop_ex <= `EXE_NOP_O;
+            alusel_ex <= `alusel_nop;
+        end else if(stall[2]==`stall_disable) begin
             ope_data_1_ex <= ope_data_1_de;
             ope_data_2_ex <= ope_data_2_de;
             w_en_ex <= w_en_de;

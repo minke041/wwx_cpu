@@ -41,7 +41,8 @@ module execute(
     hilo_w_en_we,
     hilo_w_en_ex,
     hi_w_data_ex,
-    lo_w_data_ex
+    lo_w_data_ex,
+    stall_req_ex
     );
     input wire rst;
     input wire[`reg_data_bus] ope_data_1_ex;
@@ -67,6 +68,8 @@ module execute(
     output wire[`reg_data_bus] hi_w_data_ex;
     output wire[`reg_data_bus] lo_w_data_ex;
     output wire hilo_w_en_ex;
+
+    output wire stall_req_ex;
 
     wire w_en_mid=w_en;
     wire[`reg_addr_bus] w_addr_mid=w_addr;

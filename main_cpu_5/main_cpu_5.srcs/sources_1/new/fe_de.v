@@ -26,12 +26,14 @@ module fe_de(
     rst,
     clk,
     inst_de,
-    fetch_addr_de
+    fetch_addr_de,
+    stall
     );
     input wire[`inst_bus] inst_rom;
     input wire[`inst_addr] fetch_addr_fe;
     input wire rst;
     input wire clk;
+    input wire[`stall_bus] stall;
     output reg[`inst_bus] inst_de;
     output reg[`inst_addr] fetch_addr_de;
 
@@ -39,7 +41,10 @@ module fe_de(
         if (rst==`rst_enable) begin
             inst_de <= `zero_32;
             fetch_addr_de <= `zero_32;
-        end else begin
+        end else if (stall[1]==`stall_enable&&stall[2]==`stall_disable) begin
+            inst_de <= `zero_32;
+            fetch_addr_de <= `zero_32;
+        end else if(stall[1]==`stall_disable) begin
             inst_de <= inst_rom;
             fetch_addr_de <= fetch_addr_fe;
         end

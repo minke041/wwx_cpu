@@ -21,7 +21,11 @@
 
 
 module pre_adder_4(
-    a,b,pre_0,pre_4,sum
+    a,
+    b,
+    pre_0,
+    pre_4,
+    sum
     );
     input wire[3:0] a;
     input wire[3:0] b;

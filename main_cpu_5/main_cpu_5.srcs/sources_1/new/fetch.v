@@ -24,10 +24,12 @@ module fetch(
     clk,
     rst,
     fetch_en,
-    fetch_addr
+    fetch_addr,
+    stall
     );
     input wire clk;
     input wire rst;
+    input wire[`stall_bus] stall;
     output reg fetch_en;
     output reg[`inst_addr] fetch_addr;
 
@@ -38,6 +40,9 @@ module fetch(
         fetch_en <= `fetch_disable;
         fetch_addr <= `zero_32;
         fetch_addr_now <= `zero_32;
+      end else if (stall[0]==`stall_enable) begin
+        fetch_en <= `fetch_enable;
+        fetch_addr <= fetch_addr_now;
       end else begin
         fetch_en <= `fetch_enable;
         fetch_addr <= fetch_addr_now;

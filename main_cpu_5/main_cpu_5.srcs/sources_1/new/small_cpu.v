@@ -33,6 +33,17 @@ module small_cpu(
     output wire fetch_en_o;
     output wire[`inst_addr] fetch_addr_o;
 
+    wire[`stall_bus] stall;
+    wire stall_req_de;
+    wire stall_req_ex;
+
+    ctrl ctrl0(
+    .rst(rst),
+    .stall_req_de(stall_req_de),
+    .stall_req_ex(stall_req_ex),
+    .stall(stall) 
+    );
+
     //related to fetch and fe_de
     wire[`inst_addr] fetch_addr;
 
@@ -42,7 +53,8 @@ module small_cpu(
     .clk(clk),
     .rst(rst),
     .fetch_en(fetch_en_o),
-    .fetch_addr(fetch_addr)
+    .fetch_addr(fetch_addr),
+    .stall(stall)
     );
 
     //related to fe_de and decode_main
@@ -55,7 +67,8 @@ module small_cpu(
     .rst(rst),
     .clk(clk),
     .inst_de(inst_de),
-    .fetch_addr_de(fetch_addr_de)
+    .fetch_addr_de(fetch_addr_de),
+    .stall(stall)
     );
 
     //related to regfile 
@@ -121,7 +134,8 @@ module small_cpu(
     .ex_w_addr(ex_w_addr),
     .ex_w_data(ex_w_data),
     .ope_data_1(ope_data_1_de),
-    .ope_data_2(ope_data_2_de)
+    .ope_data_2(ope_data_2_de),
+    .stall_req_de(stall_req_de)
     );
 
     //related to de_ex and ex 
@@ -146,7 +160,8 @@ module small_cpu(
     .w_en_ex(de_ex_w_en),
     .w_addr_ex(de_ex_w_addr),
     .aluop_ex(de_ex_aluop),
-    .alusel_ex(de_ex_alusel)
+    .alusel_ex(de_ex_alusel),
+    .stall(stall)
     );
     //to exe 
     wire[`reg_data_bus] hi_r_data_hilo;
@@ -182,7 +197,8 @@ module small_cpu(
     .hilo_w_en_we(hilo_w_en_we),
     .hilo_w_en_ex(hilo_w_en_ex),
     .hi_w_data_ex(hi_w_data_ex),
-    .lo_w_data_ex(lo_w_data_ex)
+    .lo_w_data_ex(lo_w_data_ex),
+    .stall_req_ex(stall_req_ex)
     );
     //related to ex_mem
     wire ex_mem_w_en;
@@ -206,7 +222,8 @@ module small_cpu(
     .lo_w_data_ex_mem(lo_w_data_ex_mem),
     .w_data_mem(ex_mem_w_data),
     .w_addr_mem(ex_mem_w_addr),
-    .w_en_mem(ex_mem_w_en)
+    .w_en_mem(ex_mem_w_en),
+    .stall(stall)
     );
 
    
@@ -240,7 +257,8 @@ module small_cpu(
     .lo_w_data_mem_we(lo_w_data_we),
     .w_en(reg_w_en),
     .w_addr(reg_w_addr),
-    .w_data(reg_w_data)
+    .w_data(reg_w_data),
+    .stall(stall)
     );
 
     hilo hilo0(
